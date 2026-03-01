@@ -16,10 +16,10 @@ local MenusBar = Topbar:WaitForChild("MenusBar",5)
 local PluModMenu = ReplicatedStorage.Menus.PluMod.Menu -- Menus / PluMod
 local PluginHandler = require(ReplicatedStorage.Modules.PluginHandler)
 
-local PluginService = ServiceService:Create("PluginService, {
+local PluginService = ServiceService:Create("PluginService", {
 
-},nil,nil,nil}
+}, nil, nil, nil)
+
 PluginHandler.addPlugin("Rojo", {
-    ["ui"] = codeHere
-}
-
+	["ui"] = "{\"Plugins\": []}"
+})
